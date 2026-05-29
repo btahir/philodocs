@@ -13,9 +13,10 @@
   ],
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && pagefind --site .next/server/app --output-path public/pagefind --glob '**/*.html'",
+    "build:next": "next build",
     "index:search": "pagefind --site .next/server/app --output-path public/pagefind --glob '**/*.html'",
-    "build:search": "bun run build && bun run index:search",
+    "build:search": "bun run build",
     "optimize:images": "bun scripts/optimize-images.mjs",
     "audit:content": "bun scripts/audit-content-quality.ts",
     "queue:content": "bun scripts/content-rewrite-queue.ts",
