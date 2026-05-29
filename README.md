@@ -2,6 +2,8 @@
 
 Open-source notes for the history of thought.
 
+<img src="app/opengraph-image.jpg" alt="PhiloDocs preview: an open manuscript on parchment with linked thought nodes." width="100%" />
+
 PhiloDocs is a philosophy wiki, timeline, and relationship graph built for clear understanding. It covers thinkers, schools, works, and the links between them without trying to become another Wikipedia. The goal is a fast reference you can read in a few minutes when you need to remember what someone argued, why it mattered, who influenced it, and who pushed back.
 
 This started as a personal database for remembering philosophy. That origin still matters: the writing should be plain, direct, useful, and opinionated about clarity. The project is now structured so other people can fork it, improve the shared corpus, or use the system for their own notes.
