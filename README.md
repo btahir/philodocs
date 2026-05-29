@@ -1,36 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PhiloDocs
+
+Open-source notes for the history of thought.
+
+PhiloDocs is a philosophy wiki, timeline, and relationship graph built for clear understanding. It covers thinkers, schools, works, and the links between them without trying to become another Wikipedia. The goal is a fast reference you can read in a few minutes when you need to remember what someone argued, why it mattered, who influenced it, and who pushed back.
+
+This started as a personal database for remembering philosophy. That origin still matters: the writing should be plain, direct, useful, and opinionated about clarity. The project is now structured so other people can fork it, improve the shared corpus, or use the system for their own notes.
+
+## What It Includes
+
+- A static Next.js wiki for thinkers, schools, works, and timelines.
+- MDX content with typed frontmatter through Content Collections and Zod.
+- Relationship metadata for influence, criticism, inheritance, contrast, authorship, and related links.
+- Per-page relationship graphs for navigating the surrounding intellectual network.
+- Pagefind-powered local search over generated static pages.
+- Lightweight image optimization scripts for icons and social images.
+
+## Stack
+
+- Next.js 16 App Router
+- React 19
+- TypeScript
+- Content Collections
+- MDX with `remark-gfm`
+- Zod
+- Pagefind
+- Tailwind CSS 4
+- Sharp
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Run checks:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+bun run lint
+bun run validate:content
+bun run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Build the search index after a production build:
 
-## Learn More
+```bash
+bun run build:search
+```
 
-To learn more about Next.js, take a look at the following resources:
+For local development:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+bun run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Content Model
 
-## Deploy on Vercel
+Content lives in `content/`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `content/thinkers/` for people and major intellectual figures.
+- `content/schools/` for schools, movements, traditions, and clusters.
+- `content/works/` for books, essays, doctrines, and durable text anchors.
+- `content/history-of-thought/` for the timeline source.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Each thinker, school, and work has typed frontmatter plus MDX body content. Relations are structured data, not prose-only links, so the site can render backlinks, critics, proponents, and graph nodes automatically.
+
+## Writing Style
+
+PhiloDocs should read like a smart refresher, not a textbook.
+
+- Use plain language.
+- Define important terms when they appear.
+- Give concrete examples where a concept is easy to misunderstand.
+- Keep the main thesis near the top.
+- Include major works for thinkers when relevant.
+- Separate the main explanation from relationship notes.
+- Avoid fake profundity, filler, and archaic academic fog.
+
+The ideal page answers: who or what is this, what did it argue, why did it matter, what are the key terms, what works should I know, who supported it, and who criticized it?
+
+## Useful Commands
+
+```bash
+bun run lint              # Run ESLint
+bun run validate:content  # Validate content and relations
+bun run build             # Production build
+bun run build:search      # Production build plus Pagefind index
+bun run audit:content     # Content quality audit
+bun run optimize:images   # Compress generated images
+```
+
+## Deployment
+
+Set `NEXT_PUBLIC_SITE_URL` to the deployed site origin so metadata and sitemap URLs are correct.
+
+Example:
+
+```bash
+NEXT_PUBLIC_SITE_URL=https://your-domain.com bun run build
+```
+
+## Contributing
+
+Contributions should improve clarity, coverage, relation quality, or site usability. Small focused pull requests are easier to review than large rewrites.
+
+For content changes, prefer accurate plain-language summaries over exhaustive detail. This project is a reference map, not a replacement for primary texts or specialist scholarship.
+
+## License
+
+MIT. See `LICENSE`.
