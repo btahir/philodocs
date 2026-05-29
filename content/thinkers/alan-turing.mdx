@@ -1,0 +1,202 @@
+---
+title: "Alan Turing"
+slug: "alan-turing"
+status: "draft"
+priority: "P1"
+summary: "Mathematician and computer scientist whose work on computation and machine intelligence became core infrastructure for philosophy of mind, logic, and AI."
+period: "20th century"
+region: "United Kingdom"
+birth_year: 1912
+death_year: 1954
+traditions:
+  - "Logic"
+  - "Computer science"
+  - "Philosophy of AI"
+last_updated: "2026-05-27"
+relations:
+  - target: "bertrand-russell"
+    target_kind: "thinker"
+    type: "inherits"
+    stance: "supportive"
+    weight: 2
+    domains: ["logic", "language"]
+    concepts: ["formal logic", "mathematical foundations", "computation"]
+    via: []
+    confidence: "medium"
+    note: "Turing inherits the logical-foundations problem that Russell helped make central to early analytic philosophy."
+  - target: "analytic-philosophy"
+    target_kind: "school"
+    type: "associated_with"
+    stance: "supportive"
+    weight: 2
+    domains: ["logic", "technology", "psychology"]
+    concepts: ["formalization", "computability", "machine intelligence"]
+    via: []
+    confidence: "high"
+    note: "Turing's work gives analytic philosophy precise tools for discussing computation, procedure, and intelligence."
+  - target: "philosophy-of-technology-ai"
+    target_kind: "school"
+    type: "central_to"
+    stance: "supportive"
+    weight: 3
+    domains: ["technology", "logic", "psychology"]
+    concepts: ["Turing machine", "imitation game", "machine intelligence"]
+    via: []
+    confidence: "high"
+    note: "Turing is central to philosophy of AI because he turns computation and machine intelligence into precise philosophical problems."
+  - target: "john-searle"
+    target_kind: "thinker"
+    type: "influences"
+    stance: "mixed"
+    weight: 2
+    domains: ["technology", "psychology", "language"]
+    concepts: ["machine intelligence", "understanding", "Chinese room"]
+    via: []
+    confidence: "high"
+    note: "Searle's Chinese room argument reacts to the Turing-style question of whether successful performance is enough for understanding."
+  - target: "daniel-dennett"
+    target_kind: "thinker"
+    type: "influences"
+    stance: "supportive"
+    weight: 2
+    domains: ["psychology", "technology"]
+    concepts: ["intentional stance", "competence", "artificial intelligence"]
+    via: []
+    confidence: "medium"
+    note: "Dennett builds a more generous interpretation of machine intelligence from the performance-centered spirit of Turing's test."
+  - target: "hubert-dreyfus"
+    target_kind: "thinker"
+    type: "influences"
+    stance: "critical"
+    weight: 2
+    domains: ["technology", "psychology"]
+    concepts: ["symbolic AI", "embodiment", "skill"]
+    via: []
+    confidence: "medium"
+    note: "Dreyfus criticizes early AI assumptions that became plausible only after Turing made computation a model for intelligence."
+  - target: "nick-bostrom"
+    target_kind: "thinker"
+    type: "influences"
+    stance: "mixed"
+    weight: 1
+    domains: ["technology", "ethics"]
+    concepts: ["machine intelligence", "superintelligence", "risk"]
+    via: []
+    confidence: "medium"
+    note: "Bostrom's concern with superintelligence presupposes the Turing-era idea that intelligence can be instantiated in machines."
+---
+## Quick Facts
+
+- Full name: Alan Mathison Turing
+- Lived: 1912-1954
+- Born: London, England
+- Died: Wilmslow, Cheshire, England
+- Main settings: Cambridge, Princeton, Bletchley Park, the National Physical Laboratory, and Manchester
+- Main fields: logic, mathematics, early computer science, cryptanalysis, mathematical biology, and [Philosophy of Technology and AI](/schools/philosophy-of-technology-ai)
+- Best-known ideas: Turing machine, computability, universal machine, halting problem, imitation game, and Turing patterns
+- Major works: "On Computable Numbers," "Intelligent Machinery," "Computing Machinery and Intelligence," and "The Chemical Basis of Morphogenesis"
+
+## The Big Question
+
+Turing asked two questions that still shape modern thought.
+
+First: what does it mean for a problem to be solvable by a definite method? A definite method is a procedure with exact steps, like long division or a recipe that leaves no choice open.
+
+Second: if a machine follows rules well enough to calculate, learn, and hold a conversation, when do we have reason to call its behavior intelligent?
+
+## In One Minute
+
+Alan Turing made the idea of computation exact before modern electronic computers were common. He imagined a very simple rule-following machine: it reads a symbol, writes a symbol, moves left or right, and changes state according to an instruction table. This model, now called a Turing machine, became a standard way to say what an algorithm is.
+
+Turing used that model to show that some problems cannot be solved by any general algorithm. This answered part of David Hilbert's Entscheidungsproblem, or "decision problem," which asked for a mechanical way to decide whether statements in formal logic are provable.
+
+He also helped design codebreaking methods at Bletchley Park, worked on early digital computers, and asked how to test machine intelligence. His imitation game, later called the Turing test, shifted the question from "Can machines really think?" to "Can a machine use language well enough that a judge cannot reliably tell it from a person?"
+
+## What They Taught
+
+Turing taught that "following a rule" can be studied with mathematical precision. An algorithm is a finite set of instructions for getting an answer: add these digits, compare these marks, move to the next square, stop when this condition is met. Turing's genius was to strip calculation down to this bare structure.
+
+His Turing machine is deliberately simple. Imagine an endless paper tape divided into squares. A reading head looks at one square at a time. The machine can erase or write a symbol, move one square left or right, and switch into a new internal state. The instruction table says what to do in every allowed situation. This was not meant to be a useful laptop. It was a clean model of any exact, step-by-step procedure.
+
+That model let Turing define computability. A problem is computable if some algorithm can always produce the right answer in a finite number of steps. A problem is undecidable if no such general algorithm exists. Turing showed that the Entscheidungsproblem is undecidable for first-order logic. In plain terms, there is no master procedure that takes every possible formula in that logical system and always says correctly whether it is provable.
+
+The halting problem makes the same lesson concrete for programmers. Ask for one perfect program that can inspect any other program and input, then always say whether that program will eventually stop or run forever. Turing's result shows that this perfect checker cannot exist. Some bugs are hard because we are careless. Other limits are deeper: there can be no universal algorithm for the task.
+
+Turing's work also supports the Church-Turing thesis, named for Turing and Alonzo Church. The thesis says that anything that is effectively calculable can be calculated by a Turing machine, or by an equivalent formal system such as Church's lambda calculus. It is not a theorem, because "effective method" is an ordinary-language idea before it is formalized. It also does not say that every physical process, brain, or mind is literally a digital computer. It says that exact rule-following calculation has this boundary.
+
+Turing then introduced the universal machine. A universal machine can read the description of another machine and simulate it. This is the idea behind the stored-program computer: instructions can be treated as data. A modern computer does not need to be rebuilt for every task. It can load a new program, read the program's instructions, and act like a different machine.
+
+His wartime cryptanalysis matters here because it showed the practical force of rule-following machinery. At Bletchley Park, Turing helped turn logical search and probability into machines and procedures for breaking encrypted German messages. The work was secret for decades, but it fit the same pattern: define the task sharply, mechanize what can be mechanized, and use human judgment where the machine needs guidance.
+
+In "Computing Machinery and Intelligence," Turing turned this way of thinking toward mind. He thought "Can machines think?" was too vague. So he proposed the imitation game. A judge exchanges typed messages with a hidden human and a hidden machine. If the judge cannot reliably tell which is which, the machine has shown a powerful kind of intelligent performance. Turing did not prove that passing the test gives a machine consciousness. He gave philosophers and engineers a public test for behavior that had often been discussed in mystical terms.
+
+Late in life, Turing studied morphogenesis, the formation of biological shape and pattern. His reaction-diffusion model says that chemicals can react with each other and spread through tissue in ways that produce spots, stripes, rings, and other patterns. The point is again Turing's signature move: complex order can sometimes be explained by simple rules acting over time.
+
+## Key Ideas With Examples
+
+- Algorithm: a fixed step-by-step method. Long division is an algorithm because each move is specified and the procedure eventually ends with an answer.
+
+- Turing machine: an abstract machine with a tape, a reading head, internal states, and rules. Example: a simple machine might scan a row of marks and add one extra mark at the end.
+
+- Computability: solvability by an algorithm. Adding two whole numbers is computable because a rule always gets the answer.
+
+- Undecidable problem: a problem with no general algorithmic solution. This does not mean humans have not found the trick yet. It means the demanded universal method cannot exist.
+
+- Entscheidungsproblem: Hilbert's decision problem. It asked for a mechanical procedure to decide, for formulas in formal logic, whether they are provable.
+
+- Halting problem: the problem of deciding whether any given program will stop. A checker may work for many cases, but no checker works for every possible program and input.
+
+- Church-Turing thesis: the claim that every effectively calculable function is computable by a Turing machine or an equivalent formal system. It defines the reach of algorithms, not the whole nature of reality.
+
+- Universal machine: a machine that can simulate other machines from their descriptions. This is why one computer can run a text editor, a game, a compiler, and a browser by loading different programs.
+
+- Imitation game: Turing's proposed test for machine intelligence through typed conversation. The example matters because it avoids judging intelligence by the machine's material or appearance.
+
+- Morphogenesis: the process by which living forms develop shape. Turing's example is that diffusing chemicals can create stable spots or stripes without a designer drawing the pattern from above.
+
+## Major Works
+
+- "On Computable Numbers, with an Application to the Entscheidungsproblem" (1936-37): defines the machine model of computation, introduces the universal machine, and shows that Hilbert's decision problem has no general algorithmic solution.
+
+- "Systems of Logic Based on Ordinals" (1938): Turing's Princeton dissertation. It explores how formal systems might be extended after Godel's incompleteness results, while still facing limits on mechanical proof.
+
+- "Intelligent Machinery" (1948): an early report on machine intelligence. It sketches learning machines and "unorganised machines," which are simple systems that can be trained rather than programmed with every answer in advance.
+
+- "Computing Machinery and Intelligence" (1950): the famous Mind paper that introduces the imitation game. It argues that instead of arguing endlessly over the word "think," we should ask what machines can do in a controlled test of intelligent conversation.
+
+- "The Chemical Basis of Morphogenesis" (1952): applies mathematics to biological form. It explains how interacting chemicals, spreading at different rates, can produce ordered patterns such as spots, waves, and rings.
+
+## Why It Matters
+
+Turing matters because he gave computation a clean shape. Once computation is defined, we can ask precise questions: What can be automated? What cannot? What does one program need in order to simulate another?
+
+He also made limits visible. The dream of a universal decision method for mathematics failed, but the failure was productive. It produced computability theory, theoretical computer science, and a better understanding of what algorithms can never guarantee.
+
+For philosophy of mind, Turing changed the debate from hidden essence to public performance. If a machine can use language, solve problems, learn from correction, and adapt to questions, philosophers need to say why that is or is not enough for intelligence.
+
+For AI ethics, the same shift creates pressure. A system can imitate understanding, authority, or personality without having human judgment or consciousness. Turing's test still forces the hard question: when machine performance becomes convincing, what do we owe users, and what should we refuse to pretend?
+
+## Proponents, Critics, and Opponents
+
+Turing inherits the logical-foundations problem that [Bertrand Russell](/thinkers/bertrand-russell) helped make central: how far can mathematics be reduced to formal rules? Hilbert gave that problem one famous form through the Entscheidungsproblem. Godel had already shown that strong formal systems cannot prove every arithmetical truth available from outside the system. Turing added a machine-level result: there is no all-purpose algorithm for deciding every case.
+
+Alonzo Church reached a closely related result in the same period using lambda calculus rather than machines. The two approaches turned out to match, which is why people speak of the Church-Turing thesis. Church's version is elegant, but Turing's version made the idea of an effective procedure feel concrete.
+
+Turing also belongs near [Ludwig Wittgenstein](/thinkers/ludwig-wittgenstein), though not as a follower. Turing attended Wittgenstein's 1939 Cambridge lectures on the foundations of mathematics. Wittgenstein pressed questions about rules, proof, and human practice. Turing gave a formal model of what rule-following calculation can and cannot do.
+
+[Daniel Dennett](/thinkers/daniel-dennett) is broadly sympathetic to the Turing-style focus on competence. If a system reliably acts as if it has beliefs, goals, and understanding, Dennett thinks that pattern can be philosophically important.
+
+[John Searle](/thinkers/john-searle) is the famous critic. His Chinese room argument says that manipulating symbols according to rules is not the same as understanding meaning. A system might pass a language test, he argues, while still lacking genuine understanding.
+
+[Hubert Dreyfus](/thinkers/hubert-dreyfus) attacks a different target: the idea that human intelligence is mainly formal rule use. He argues that skill, embodiment, background context, and practical know-how cannot be captured by symbol manipulation alone. [Nick Bostrom](/thinkers/nick-bostrom), writing much later, treats the Turing-era possibility of machine intelligence as a starting point for questions about superintelligence and risk.
+
+## Related Pages
+
+- [Bertrand Russell](/thinkers/bertrand-russell)
+- [Ludwig Wittgenstein](/thinkers/ludwig-wittgenstein)
+- [Analytic Philosophy](/schools/analytic-philosophy)
+- [Philosophy of Technology and AI](/schools/philosophy-of-technology-ai)
+- [John Searle](/thinkers/john-searle)
+- [Daniel Dennett](/thinkers/daniel-dennett)
+- [Hubert Dreyfus](/thinkers/hubert-dreyfus)
+- [Nick Bostrom](/thinkers/nick-bostrom)
