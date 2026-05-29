@@ -19,7 +19,7 @@ const literata = Literata({
 
 const description =
   "Open-source notes for the history of thought: a clear philosophy wiki, timeline, and relationship graph for thinkers, schools, works, and ideas.";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
+const siteUrl = "https://philodocs.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

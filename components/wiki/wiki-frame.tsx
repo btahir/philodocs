@@ -11,6 +11,8 @@ const navItems = [
   { href: "/works", label: "Works" },
 ];
 
+const githubUrl = "https://github.com/btahir/philodocs";
+
 export function WikiFrame({ children }: { children: ReactNode }) {
   const stats = getWikiStats();
 
@@ -41,6 +43,14 @@ export function WikiFrame({ children }: { children: ReactNode }) {
                 {item.label}
               </Link>
             ))}
+            <a
+              href={githubUrl}
+              className="wiki-nav-link wiki-nav-link-github"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </nav>
         </div>
       </header>

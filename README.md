@@ -91,16 +91,6 @@ bun run audit:content     # Content quality audit
 bun run optimize:images   # Compress generated images
 ```
 
-## Deployment
-
-Set `NEXT_PUBLIC_SITE_URL` to the deployed site origin so metadata and sitemap URLs are correct.
-
-Example:
-
-```bash
-NEXT_PUBLIC_SITE_URL=https://your-domain.com bun run build
-```
-
 ## Contributing
 
 Contributions should improve clarity, coverage, relation quality, or site usability. Small focused pull requests are easier to review than large rewrites.

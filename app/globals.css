@@ -98,6 +98,11 @@ a {
   border-color: var(--link);
 }
 
+.wiki-nav-link-github {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .wiki-layout {
   display: grid;
   gap: 1.5rem;
