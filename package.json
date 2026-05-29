@@ -1,10 +1,25 @@
 {
   "name": "philodocs",
   "version": "0.1.0",
+  "description": "Open-source notes for the history of thought: a philosophy wiki, timeline, and relationship graph.",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "philosophy",
+    "wiki",
+    "nextjs",
+    "mdx",
+    "knowledge-graph"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "index:search": "pagefind --site .next/server/app --output-path public/pagefind --glob '**/*.html'",
+    "build:search": "bun run build && bun run index:search",
+    "optimize:images": "bun scripts/optimize-images.mjs",
+    "audit:content": "bun scripts/audit-content-quality.ts",
+    "queue:content": "bun scripts/content-rewrite-queue.ts",
+    "validate:content": "bun scripts/validate-content.ts",
     "start": "next start",
     "lint": "eslint"
   },
@@ -14,14 +29,24 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@content-collections/core": "^0.15.0",
+    "@content-collections/mdx": "^0.2.2",
+    "@content-collections/next": "^0.2.11",
+    "@shikijs/rehype": "^4.1.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "pagefind": "^1.5.2",
+    "png-to-ico": "^3.0.1",
+    "remark-gfm": "^4.0.1",
+    "sharp": "^0.34.5",
+    "shiki": "^4.1.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "zod": "^4.4.3"
   },
   "ignoreScripts": [
     "sharp",

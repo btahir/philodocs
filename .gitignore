@@ -16,6 +16,8 @@
 # next.js
 /.next/
 /out/
+/.content-collections/
+/public/pagefind/
 
 # production
 /build
@@ -23,6 +25,8 @@
 # misc
 .DS_Store
 *.pem
+/skills-lock.json
+/.agents/skills/
 
 # debug
 npm-debug.log*
